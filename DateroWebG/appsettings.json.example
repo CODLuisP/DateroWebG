@@ -1,0 +1,11 @@
+{
+  "ConnectionStrings": {
+    "MySql": "Server=mysql-gts;Port=3306;Database=urbano;Uid=DB_USER;Pwd=CHANGE_ME;Charset=utf8mb4;Pooling=true;Allow User Variables=True;MinimumPoolSize=5;MaximumPoolSize=50;ConnectionTimeout=30;ConnectionLifeTime=300;ConnectionReset=true;DefaultCommandTimeout=120;"
+  },
+  "App": {
+    "Usuario": "etudvrg",
+    "PuertoHttp": 8080,
+    "ApiBaseUrl": "https://villa.velsat.pe:8443",
+    "HttpTimeoutSegundos": 10
+  }
+}

@@ -1,0 +1,38 @@
+# Compilación
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+publish/
+out/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Dependencias Node (si existieran)
+node_modules/
+
+# Configuración con secretos (excepto .example)
+appsettings.json
+appsettings.*.json
+!appsettings.json.example
+**/appsettings.json
+**/appsettings.*.json
+!**/appsettings.json.example
+.env
+.env.*
+!.env.example
+
+# Credenciales y certificados
+firebase-credentials.json
+**/firebase-credentials.json
+secrets/
+*.pfx
+*.pem
+*.key

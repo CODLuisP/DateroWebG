@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  datero-web-g:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: datero-web-g:latest
+    container_name: datero-web-g
+    restart: unless-stopped
+    environment:
+      - TZ=America/Lima
+    ports:
+      - "127.0.0.1:3012:8080"
+    volumes:
+      - ./DateroWebG/appsettings.json:/app/appsettings.json:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  default:
+    name: app-net
+    external: true
